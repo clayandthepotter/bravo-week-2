@@ -1,0 +1,48 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-areas:
+        "header header header header"
+        "nav main main main"
+        "content1 content1 content2 content3"
+        "footer footer footer footer";
+    gap: 1em;
+    height: 95vh;
+        
+}
+header {
+    grid-area: header;
+    background-color: lightslategray;
+    padding: 1em;
+}
+nav {
+    grid-area: nav;
+    background-color: lightblue;
+    padding: 1em;
+}
+main {
+    grid-area: main;
+    background-color: lightcyan;
+    padding: 1em;
+}
+content1 {
+    grid-area: content1;
+    background-color: lightcyan;
+    padding: 1em;
+}
+content2 {
+    grid-area: content2;
+    background-color: lightcyan;
+    padding: 1em;
+}
+content3 {
+    grid-area: content3;
+    background-color: lightcyan;
+    padding: 1em;
+}
+footer {
+    grid-area: footer;
+    background-color: lightslategray;
+    padding: 1em;
+}
