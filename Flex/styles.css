@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    padding: 1em 0; 
+}
+
+.navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: color 0.2s;
+    transform: .2s;
+}
+
+.navbar a:hover {
+    color: grey;
+    transform: translateY(-2px);
+}
