@@ -5,7 +5,7 @@
     grid-template-areas:
         "header header header header"
         "nav main main main"
-        "content1 content1 content2 content3"
+        "section1 section1 section2 section3"
         "footer footer footer footer";
     gap: 1em;
     height: 95vh;
@@ -13,12 +13,14 @@
 }
 header {
     grid-area: header;
+    color: black;
     background-color: lightslategray;
     padding: 1em;
+    
 }
 nav {
     grid-area: nav;
-    background-color: lightblue;
+    background-color: green;
     padding: 1em;
 }
 main {
@@ -26,18 +28,18 @@ main {
     background-color: lightcyan;
     padding: 1em;
 }
-content1 {
-    grid-area: content1;
+section1 {
+    grid-area: section1;
     background-color: lightcyan;
     padding: 1em;
 }
 content2 {
-    grid-area: content2;
+    grid-area: section2;
     background-color: lightcyan;
     padding: 1em;
 }
 content3 {
-    grid-area: content3;
+    grid-area: section3;
     background-color: lightcyan;
     padding: 1em;
 }
