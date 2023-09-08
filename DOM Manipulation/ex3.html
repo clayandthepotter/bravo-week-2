@@ -33,8 +33,8 @@
 </body>
 <script>
     function changeColor() {
-        const shapes = document.querySelectorAll(".shape"); 
-        const colorPicker = document.getElementById("colorPicker");
+        let shapes = document.querySelectorAll(".shape"); 
+        let colorPicker = document.getElementById("colorPicker");
         function changeColor(event) {                                        
             let selectedColor = colorPicker.value;
             event.target.style.backgroundColor = selectedColor;
