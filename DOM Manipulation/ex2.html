@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Demo Ex. 2</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Creat an html page with a button labeled add item
+    everytime the button is clicked add a new li to a ul below it
+    the items could be anything -->
+
+    <ul id="list">
+        <li>Starting Item</li>
+    </ul>
+
+    <button onclick="addItem()">Add Item</button>
+
+</body>
+<script>
+    let clickCount = 0;
+    function addItem() {
+        // incriment
+        clickCount++;
+        // creat a new li element
+        let listItem = document.createElement('li');
+        listItem.innerText = "EagleCorps" + clickCount;
+        // create a variable to store the <ul> element
+        let list = document.getElementById('list');
+
+        // append li to ul
+        list.appendChild(listItem);
+
+    }
+</script>
+</html>
