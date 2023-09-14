@@ -11,6 +11,8 @@ hr {
     font-size: 36px;
     font-weight: bold;
     letter-spacing: 2px;
+    color: white;
+    background-color: rgb(132, 168, 71);
 }
 
 #gameBoard {
@@ -24,7 +26,8 @@ hr {
 
 .tile {
 /* box */
-    border: 1px solid grey;
+    border: 2px solid grey;
+    border-radius: 15%;
     width: 60px;
     height: 60px;
     margin: 2.5px;
@@ -40,18 +43,18 @@ hr {
 
 .correct {
     background-color: green;
-    color: lightgrey;
+    color: rgb(255, 255, 255);
     border-color: gray;
 }
 
 .present {
     background-color: rgb(235, 215, 83);
-    color: lightgray;
+    color: rgb(255, 255, 255);
     border-color: grey;
 }
 
 .absent {
     background-color: rgb(74, 74, 74);
-    color: lightgray;
+    color: rgb(255, 255, 255);
     border-color: grey;
 }
