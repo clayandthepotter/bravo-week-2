@@ -12,7 +12,14 @@ hr {
     font-weight: bold;
     letter-spacing: 2px;
     color: white;
-    background-color: rgb(132, 168, 71);
+    background-color: rgb(52, 77, 10);
+}
+
+#instructions {
+    background-color: aquamarine;
+    color: brown;
+    width: 50%;
+    margin: auto;
 }
 
 #gameBoard {

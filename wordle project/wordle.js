@@ -23,10 +23,7 @@ let word = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
 console.log(word);
 
 // create an onload initialization function
-window.onload = function() {
-    initialize();
-}
-
+window.onload = () => initialize();
 // define initialize function
 function initialize() {
 
@@ -42,7 +39,7 @@ function initialize() {
             tile.classList.add('tile');
             // set our tile.innerText to ''
             tile.innerText = '';
-            // whan a new tile is created, we want to add it to our gameBoard
+            // when a new tile is created, we want to add it to our gameBoard
             document.getElementById('gameBoard').appendChild(tile);
         }
     }
